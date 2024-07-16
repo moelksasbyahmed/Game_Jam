@@ -1,0 +1,1509 @@
+
+ [2024-05-11 17:22:47]     InvalidOperationException: This cannot be used during play mode, please use SceneManager.LoadScene()/SceneManager.LoadSceneAsync() instead.       UnityEditor.SceneManagement.EditorSceneManager.OpenScene (System.String scenePath, UnityEditor.SceneManagement.OpenSceneMode mode) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.GameObjectsTreeViewDragging.DoDragScenes (UnityEditor.GameObjectTreeViewItem parentItem, UnityEditor.GameObjectTreeViewItem targetItem, System.Boolean perform, UnityEditor.IMGUI.Controls.TreeViewDragging+DropPosition dropPos) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.GameObjectsTreeViewDragging.DoDrag (UnityEditor.IMGUI.Controls.TreeViewItem parentItem, UnityEditor.IMGUI.Controls.TreeViewItem targetItem, System.Boolean perform, UnityEditor.IMGUI.Controls.TreeViewDragging+DropPosition dropPos) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.IMGUI.Controls.TreeViewDragging.DragElement (UnityEditor.IMGUI.Controls.TreeViewItem targetItem, UnityEngine.Rect targetItemRect, System.Int32 row) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.IMGUI.Controls.TreeViewController.HandleUnusedEvents () (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.IMGUI.Controls.TreeViewController.OnGUI (UnityEngine.Rect rect, System.Int32 keyboardControlID) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.SceneHierarchy.DoTreeView (System.Single searchPathHeight) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.SceneHierarchy.OnGUI (UnityEngine.Rect rect) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.SceneHierarchyWindow.DoSceneHierarchy () (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.SceneHierarchyWindow.OnGUI () (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect onGUIPosition) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.DockArea.DrawView (UnityEngine.Rect dockAreaRect) (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEditor.DockArea.OldOnGUI () (at <ac8a1d1a125546cf82b0ec17802fc7c2>:0)
+UnityEngine.UIElements.IMGUIContainer.DoOnGUI (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Action onGUIHandler, System.Boolean canAffectFocus) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent (UnityEngine.Event e, System.Boolean canAffectFocus) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUIRaw (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.SendEventToIMGUI (UnityEngine.UIElements.EventBase evt, System.Boolean canAffectFocus, System.Boolean verifyBounds) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.IMGUIContainer.ProcessEvent (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.CallbackEventHandler.HandleEvent (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.CallbackEventHandler.HandleEventAtCurrentTargetAndPhase (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.CallbackEventHandler.UnityEngine.UIElements.IEventHandler.HandleEvent (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.EventDispatchUtilities.HandleEventAcrossPropagationPath (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.EventDispatchUtilities.PropagateEvent (UnityEngine.UIElements.EventBase evt) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToRegularTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.SendEventToTarget (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.BaseVisualElementPanel panel) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.MouseEventDispatchingStrategy.DispatchEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel iPanel) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.EventDispatcher.ApplyDispatchingStrategies (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, System.Boolean imguiEventIsInitiallyUsed) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.EventDispatcher.ProcessEvent (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.EventDispatcher.Dispatch (UnityEngine.UIElements.EventBase evt, UnityEngine.UIElements.IPanel panel, UnityEngine.UIElements.DispatchMode dispatchMode) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.BaseVisualElementPanel.SendEvent (UnityEngine.UIElements.EventBase e, UnityEngine.UIElements.DispatchMode dispatchMode) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.UIElementsUtility.DoDispatch (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.UIEventRegistration.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2 (System.Int32 i, System.IntPtr ptr) (at <545885fff981424ba24fbd84a445d137>:0)
+UnityEngine.GUIUtility.ProcessEvent (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result) (at <cffc46fa8b1e4ee1a0e1b35a8d998061>:0)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:16]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:35]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:27:35]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 17:28:00]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 18:00:33]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 18:00:33]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 18:01:59]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-05-11 18:01:59]     NullReferenceException: Object reference not set to an instance of an object       won.Start () (at Assets/won.cs:29)
+     
+
+ [2024-06-16 18:27:54]     NullReferenceException: Object reference not set to an instance of an object       DialogueManager.LoadNextLine () (at Assets/ahmed/scripts/Dialouge.cs:58)
+DialogueManager.Update () (at Assets/ahmed/scripts/Dialouge.cs:25)
+     
+
+ [2024-06-16 19:19:59]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:00]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:00]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:01]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:02]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:03]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:04]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:05]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:06]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-16 19:20:07]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Update () (at Assets/ahmed/scripts/DialougeManager.cs:23)
+     
+
+ [2024-06-19 15:42:39]     IndexOutOfRangeException: Index was outside the bounds of the array.       DialogueManager+<WritingAnimation>d__11.MoveNext () (at Assets/dialouge/Dialouge.cs:54)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-20 16:09:24]     NullReferenceException: Object reference not set to an instance of an object       DialougeManager.Start () (at Assets/dialouge/DialougeManager.cs:16)
+     
+
+ [2024-06-20 16:17:39]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:19)
+     
+
+ [2024-06-20 16:17:40]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:19)
+     
+
+ [2024-06-20 16:18:19]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:19)
+     
+
+ [2024-06-20 16:18:21]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:19)
+     
+
+ [2024-06-20 16:31:16]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:31:25]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:31:26]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:32:46]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:32:48]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:32:49]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:32:50]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:34:10]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:34:11]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:34:12]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 16:34:12]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:13:21]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:35)
+     
+
+ [2024-06-20 17:15:45]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:35)
+     
+
+ [2024-06-20 17:16:51]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:16:51]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:45]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:49]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:49]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:49]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:50]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:50]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:50]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:51]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:51]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:51]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:53]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:54]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:55]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:55]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:56]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:17:57]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:12]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:13]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:13]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:14]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:14]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:15]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:15]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:15]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:15]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:18:16]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:03]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:03]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:05]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:06]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:06]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:06]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:06]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:07]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:07]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:07]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:07]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:08]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:08]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:08]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-20 17:19:09]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/DragAndDrop.cs:24)
+     
+
+ [2024-06-22 08:59:40]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:360)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 08:59:44]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:360)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 08:59:57]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:360)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:04:18]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:82)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:361)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:04:53]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:82)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:361)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:05:12]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:82)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:361)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:07:50]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:82)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:366)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:08:04]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:82)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:366)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:20:00]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:496)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:22:49]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:313)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:22:56]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:496)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 09:23:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop.doRayCast (UnityEngine.Vector2 position, System.Int32 x) (at Assets/DragAndDrop.cs:81)
+DragAndDrop.check (UnityEngine.Vector2 dimensions, UnityEngine.Vector2 Newslot) (at Assets/DragAndDrop.cs:496)
+DragAndDrop+<FollowMouse>d__2.MoveNext () (at Assets/DragAndDrop.cs:38)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-06-22 18:42:06]     NullReferenceException: Object reference not set to an instance of an object       scroll.doRayCast (UnityEngine.Vector2 position) (at Assets/scroll.cs:17)
+scroll.Update () (at Assets/scroll.cs:54)
+     
+
+ [2024-06-22 18:44:40]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:54)
+     
+
+ [2024-06-22 18:50:32]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:58)
+     
+
+ [2024-06-22 18:50:33]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:58)
+     
+
+ [2024-06-22 18:50:33]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:58)
+     
+
+ [2024-06-22 18:50:34]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:58)
+     
+
+ [2024-06-22 18:58:32]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+scroll.Update () (at Assets/scroll.cs:62)
+     
+
+ [2024-06-22 19:18:35]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:35]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:35]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:35]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:35]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:36]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:36]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:36]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:36]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:36]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:42]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:43]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:44]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:45]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-06-22 19:18:46]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+UnityEngine.UI.scroll.OnDrag (UnityEngine.EventSystems.PointerEventData eventData) (at Assets/scroll.cs:790)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IDragHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:78)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs:272)
+UnityEngine.EventSystems.EventSystem:Update() (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs:530)
+     
+
+ [2024-07-14 19:33:08]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:08]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:09]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:09]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:09]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:09]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:10]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:10]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:55]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:56]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:56]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 19:33:56]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.DrivenRectTransformTracker.Add (UnityEngine.Object driver, UnityEngine.RectTransform rectTransform, UnityEngine.DrivenTransformProperties drivenProperties) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.UI.GridLayoutGroup.SetCellsAlongAxis (System.Int32 axis) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:225)
+UnityEngine.UI.GridLayoutGroup.SetLayoutHorizontal () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs:197)
+UnityEngine.UI.LayoutRebuilder+<>c.<Rebuild>b__12_1 (UnityEngine.Component e) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:128)
+UnityEngine.UI.LayoutRebuilder.PerformLayoutControl (UnityEngine.RectTransform rect, UnityEngine.Events.UnityAction`1[T0] action) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:133)
+UnityEngine.UI.LayoutRebuilder.Rebuild (UnityEngine.UI.CanvasUpdate executing) (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs:86)
+UnityEngine.UI.CanvasUpdateRegistry.PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs:181)
+UnityEditor.EditorApplication:Internal_CallGlobalEventHandler()
+     
+
+ [2024-07-14 23:30:41]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop+<FollowMouse>d__4.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:78)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-14 23:33:16]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop+<FollowMouse>d__4.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:78)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-15 00:19:20]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop+<FollowMouse>d__4.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:78)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-15 00:19:27]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop+<FollowMouse>d__4.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:78)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 05:46:53]     UnassignedReferenceException: The variable InventoryPrefab of inventoryHolder has not been assigned.
+You probably need to assign the InventoryPrefab variable of the inventoryHolder script in the inspector.       UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, System.Boolean instantiateInWorldSpace) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.Object.Instantiate[T] (T original, UnityEngine.Transform parent, System.Boolean worldPositionStays) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.Object.Instantiate[T] (T original, UnityEngine.Transform parent) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+inventoryHolder.load () (at Assets/inventoryHolder.cs:29)
+inventoryHolder.Update () (at Assets/inventoryHolder.cs:88)
+     
+
+ [2024-07-16 05:46:53]     UnassignedReferenceException: The variable InventoryPrefab of inventoryHolder has not been assigned.
+You probably need to assign the InventoryPrefab variable of the inventoryHolder script in the inspector.       UnityEngine.Object.Instantiate (UnityEngine.Object original, UnityEngine.Transform parent, System.Boolean instantiateInWorldSpace) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.Object.Instantiate[T] (T original, UnityEngine.Transform parent, System.Boolean worldPositionStays) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+UnityEngine.Object.Instantiate[T] (T original, UnityEngine.Transform parent) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+inventoryHolder.load () (at Assets/inventoryHolder.cs:29)
+inventoryHolder.Update () (at Assets/inventoryHolder.cs:88)
+     
+
+ [2024-07-16 14:19:27]     MissingReferenceException: The object of type 'RectTransform' has been destroyed but you are still trying to access it.
+Your script should either check if it is null or you should not destroy the object.       UnityEngine.Transform.set_position (UnityEngine.Vector3 value) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:46)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:20:31]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:51)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:22:22]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:51)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:23:41]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:50)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:25:05]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:50)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:33:34]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:49)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:33:34]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:57)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:35:03]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory 1/DragAndDrop.cs:57)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
+
+ [2024-07-16 14:59:10]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/inventory 1/DragAndDrop.cs:742)
+     
+
+ [2024-07-16 15:00:17]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/inventory 1/DragAndDrop.cs:742)
+     
+
+ [2024-07-16 15:00:45]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/inventory 1/DragAndDrop.cs:742)
+     
+
+ [2024-07-16 15:00:46]     NullReferenceException: Object reference not set to an instance of an object       DragAndDrop.Update () (at Assets/inventory 1/DragAndDrop.cs:742)
+     
+
+ [2024-07-16 16:47:19]     ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index       System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <a3b02d6f9b494355b946095ea1f25c54>:0)
+DragAndDrop+<FollowMouse>d__9.MoveNext () (at Assets/inventory/DragAndDrop.cs:136)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <30adf90198bc4c4b83910c6fb1877998>:0)
+     
