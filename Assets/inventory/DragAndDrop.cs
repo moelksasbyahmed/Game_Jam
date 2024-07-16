@@ -14,13 +14,15 @@ public class DragAndDrop : MonoBehaviour
     public Transform theMainContentViewer;
     public Transform itemTransfareHolder; // for putting the item in while transfaring u need tomake it the last item in the inventory viewr, whcih means eevery inventory u instantaite it needs to be sibking index 0
     Transform oldParent;
-
+    public Transform allDropedItems;
 
 
     //end here
     public static float step;
-    /// the squar width and height
 
+
+
+    /// the squar width and height
     public float Rstep = 50;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,8 @@ public class DragAndDrop : MonoBehaviour
 
     }
     bool world = false;
+    
+
     // Update is called once per frame
     public GraphicRaycaster raycaster;
     IEnumerator FollowMouse(Transform taget, Vector3 toSub)
@@ -44,8 +48,10 @@ public class DragAndDrop : MonoBehaviour
         {
             if (Input.mousePosition.x < widthFitter.mostLeft && !world)
             {
+                //convert from ui to world
                 //add later an object in the outside world to store the objects that are on the floor  change ------------------------ important
-                Transform ds = Instantiate(taget.GetComponent<items>().data.worldPrefabe).transform;
+
+                Transform ds = Instantiate(taget.GetComponent<items>().data.worldPrefabe,allDropedItems).transform; //instantiate the world prefab
                 Destroy(taget.gameObject);
                 taget = ds;
                 world = true;
@@ -53,7 +59,9 @@ public class DragAndDrop : MonoBehaviour
             }
             else if (world && Input.mousePosition.x >= widthFitter.mostLeft)
             {
-                Transform ds = Instantiate(taget.GetComponent<items>().data.UIprefabe, itemTransfareHolder).transform;
+
+                //convert from world to ui
+                Transform ds = Instantiate(taget.GetComponent<items>().data.UIprefabe, itemTransfareHolder).transform; // instantiate the ui prefab
                 Destroy(taget.gameObject);
                 taget = ds;
                 world = false;
@@ -80,6 +88,8 @@ public class DragAndDrop : MonoBehaviour
         {
             yield break;
         }
+       
+
         List<RaycastResult> results2 = new List<RaycastResult>();
         PointerEventData eventData = new PointerEventData(EventSystem.current);
         eventData.position = Input.mousePosition;
@@ -96,7 +106,7 @@ public class DragAndDrop : MonoBehaviour
                 Debug.Log(results2[1].gameObject.name);
                 if (check(results2[0].gameObject.GetComponent<items>().data.dimention, results2[1].gameObject.transform.position, out result))
                 {//                                                                       the slot ^
-
+                    // it was true and the item moved
                     // taget.position = results2[1].gameObject.transform.position - toSub;
                     taget.SetParent(results2[1].gameObject.transform.parent.GetChild((results2[1].gameObject.transform.parent.childCount - 1)));
                     //u stopped here
@@ -110,8 +120,24 @@ public class DragAndDrop : MonoBehaviour
                 }
                 else
                 {
+
+                    //no enough space the item didnt move
+
+
+                    if (oldParent.name == "allDropedItems")
+                    {
+                        Transform ds = Instantiate(taget.GetComponent<items>().data.worldPrefabe, allDropedItems).transform; //instantiate the world prefab
+                        ds.SetParent(oldParent);
+                        ds.position = oldPosition;
+                        Destroy(taget.gameObject);
+                        yield break;
+                    }
+
+                    //the below part is for if it was in the start of the move it was an ui not world and the above sfor the world
+
+
+
                     taget.position = results[1].gameObject.transform.position - toSub;
-                    //no enough space
                     redoTheParent(taget);
                     yield return null;
                     results[1].gameObject.transform.parent.GetComponent<inventoryHolder>().save();
@@ -121,18 +147,49 @@ public class DragAndDrop : MonoBehaviour
             }
             else
             {
+
+                //there are no slot and the item not move
+
+
+                if (oldParent.name == "allDropedItems")
+                {
+                    Transform ds = Instantiate(taget.GetComponent<items>().data.worldPrefabe, allDropedItems).transform; //instantiate the world prefab
+                    ds.SetParent(oldParent);
+                    ds.position = oldPosition;
+                    Destroy(taget.gameObject);
+
+                    yield break;
+                }
+
+                //the below part is for if it was in the start of the move it was an ui not world and the above sfor the world
+                
                 taget.position = results[1].gameObject.transform.position - toSub;
                 redoTheParent(taget);
 
                 yield return null;
                 results[1].gameObject.transform.parent.GetComponent<inventoryHolder>().save();
-                //there are no slot
                 Debug.Log("heeeeerereeee");
             }
         }
         else
         {
-            //there are no slot
+            //there are no slot and the item not move
+
+
+
+            if (oldParent.name == "allDropedItems")
+            {
+                Transform ds = Instantiate(taget.GetComponent<items>().data.worldPrefabe, allDropedItems).transform; //instantiate the world prefab
+                ds.SetParent(oldParent);
+                ds.position = oldPosition;
+                Destroy(taget.gameObject);
+
+                yield break;
+            }
+
+            //the below part is for if it was in the start of the move it was an ui not world and the above sfor the world
+
+
             taget.position = results[1].gameObject.transform.position - toSub;
             redoTheParent(taget);
 
@@ -741,6 +798,8 @@ public class DragAndDrop : MonoBehaviour
                 if (hit.collider != null)
                 {
                     Debug.Log("hit in the 2d World "+ hit.collider.name);
+                    oldPosition = hit.transform.position;
+                    oldParent = hit.transform.parent;
                     StartCoroutine(FollowMouse(hit.transform,Vector3.zero));
 
                 }
@@ -749,4 +808,7 @@ public class DragAndDrop : MonoBehaviour
             }
         }
     }
+
+    Vector3 oldPosition;
 }
+

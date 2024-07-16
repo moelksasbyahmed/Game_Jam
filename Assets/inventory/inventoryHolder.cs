@@ -5,11 +5,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-[Serializable]
-public struct allitems
-{
-    public GameObject prefab;
-}
+
 public class inventoryHolder : MonoBehaviour
 {
    // [Header("what i added i dont know i it should be here")]
