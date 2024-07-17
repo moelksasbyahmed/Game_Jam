@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class split : MonoBehaviour
 {
-    public  int numberOfSplitestsLeft =3;
+    public int numberOfSplitestsLeft = 3;
     public static GameObject activePlayer;
     public GameObject slime;
 
@@ -12,50 +10,87 @@ public class split : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        activePlayer = gameObject;
-        if(playersParent == null)
+        if (activePlayer == null)
+        {
+
+            activePlayer = gameObject;
+        }
+        if (playersParent == null)
         {
             playersParent = transform.parent;
         }
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && numberOfSplitestsLeft >0 && activePlayer == gameObject)
+        if (activePlayer != gameObject)
+        {
+            try
+            {
+
+                transform.GetChild(transform.childCount - 1).GetComponent<movement>().enabled = false;
+                transform.GetChild(transform.childCount - 1).GetComponent<collision>().enabled = false;
+            }
+            catch { }
+
+            this.enabled = false;
+            return;
+        }
+        if (Input.GetMouseButtonDown(0) && numberOfSplitestsLeft > 0 && activePlayer == gameObject)
         {
             numberOfSplitestsLeft--;
+            Debug.Log(transform.position);
 
-
-            GameObject newSplitted = Instantiate(slime, transform.GetChild(transform.childCount-1).position, Quaternion.identity,playersParent);
-            GameObject newSplitted2 = Instantiate(slime, transform.GetChild(transform.childCount - 1).position +  Vector3.right * 5 , Quaternion.identity,playersParent);
-           
+            transform.GetChild(transform.childCount - 1).GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             
+            GameObject newSplitted = Instantiate(slime, playersParent);
+            GameObject newSplitted2 = Instantiate(slime, playersParent);
+
+            newSplitted.transform.localPosition = Vector3.zero;
+            newSplitted2.transform.localPosition = Vector3.zero;
+
+
+            newSplitted.transform.position = transform.GetChild(transform.childCount - 1).position;
+            newSplitted2.transform.position = transform.GetChild(transform.childCount - 1).position + Vector3.right * 1;
+
+            Debug.Log(newSplitted.transform.position);
+
+
             newSplitted.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
             newSplitted2.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
 
+
             newSplitted.transform.localScale = activePlayer.transform.localScale / 2;
             newSplitted2.transform.localScale = activePlayer.transform.localScale / 2;
-            
-            
+
             activePlayer = newSplitted2;
-            
+
             Destroy(gameObject);
-            
+
 
 
         }
-        if( Input.GetKeyDown(KeyCode.Tab) && activePlayer == gameObject)
+        if (Input.GetKeyDown(KeyCode.Tab) && activePlayer == gameObject)
         {
-           int newIndex =  activePlayer.transform.GetSiblingIndex()+ 1;
-            if(newIndex >= playersParent.childCount)
+            int newIndex = activePlayer.transform.GetSiblingIndex() + 1;
+            if (newIndex >= playersParent.childCount)
             {
                 newIndex = 0;
             }
             activePlayer = playersParent.GetChild(newIndex).gameObject;
+            Debug.Log(activePlayer.name);
+            try
+            {
+
+                activePlayer.transform.GetChild(transform.childCount - 1).GetComponent<movement>().enabled = true;
+                activePlayer.transform.GetChild(transform.childCount - 1).GetComponent<collision>().enabled = true;
+            }
+            catch { }
+            activePlayer.GetComponent<split>().enabled = true;
 
         }
-        
+
     }
 }
