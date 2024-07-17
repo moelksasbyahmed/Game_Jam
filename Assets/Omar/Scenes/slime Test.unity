@@ -1262,33 +1262,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!50 &1079581636
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5901754214527171509}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 3
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!43 &1097107039
 Mesh:
   m_ObjectHideFlags: 0
@@ -4001,7 +3974,6 @@ GameObject:
   - component: {fileID: 4301280410798239325}
   - component: {fileID: 3726824169235832402}
   - component: {fileID: 7396551908019637151}
-  - component: {fileID: 1079581636}
   m_Layer: 0
   m_Name: slime
   m_TagString: Untagged
@@ -4991,10 +4963,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5047,13 +5019,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallJumping: 0
   dashTime: 0.4
-  dashSpeed: 100
+  dashSpeed: 50
   dashDrag: 4.5
   wallJumpTime: 0.7
   jumpLerp: 5
-  jumpSpeed: 100
+  jumpSpeed: 45
   slideSpeed: 5
-  speed: 10
+  speed: 6
   fallMuliplier: 2.5
   lowJumpMultiplier: 3.5
   risiingMultiplier: 1
