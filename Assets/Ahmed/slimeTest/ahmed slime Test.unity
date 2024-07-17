@@ -1655,7 +1655,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.3295125, y: -0.40322357}
+  m_ConnectedAnchor: {x: 1.3295125, y: -0.40322354}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.1
@@ -1676,7 +1676,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.1654454, y: 0.41680053}
+  m_ConnectedAnchor: {x: -1.1654456, y: 0.4168005}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.1
@@ -1697,7 +1697,7 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3475244, y: -1.2205402}
+  m_ConnectedAnchor: {x: -0.34752437, y: -1.2205403}
   m_AutoConfigureDistance: 1
   m_Distance: 0.005
   m_DampingRatio: 0.1
@@ -2865,8 +2865,7 @@ Transform:
   m_LocalPosition: {x: -12.300001, y: -0.79999924, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 619394802}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -3377,6 +3376,37 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &553931596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553931597}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &553931597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553931596}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.4, y: 27.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,11 +3483,11 @@ Transform:
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.99879724, w: -0.04903231}
-  m_LocalPosition: {x: 2.9899998, y: 2.1, z: 10}
+  m_LocalPosition: {x: -9.310001, y: 1.3000007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 519420032}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -177.935}
 --- !u!4 &632068626 stripped
 Transform:
@@ -5780,7 +5810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1275346077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7763,7 +7793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1807974043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10265,15 +10295,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4539568540488744934, guid: b92163e587771ad4c9f4d212739f0dfd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4539568540488744934, guid: b92163e587771ad4c9f4d212739f0dfd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4539568540488744934, guid: b92163e587771ad4c9f4d212739f0dfd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.11
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4539568540488744934, guid: b92163e587771ad4c9f4d212739f0dfd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11111,6 +11141,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.y
       value: -0.046686966
       objectReference: {fileID: 0}
+    - target: {fileID: 3060012539303962621, guid: 0d67ac7b76cc71a468b585e244d08807, type: 3}
+      propertyPath: m_AutoRebind
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3635424341674938818, guid: 0d67ac7b76cc71a468b585e244d08807, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11339,7 +11373,9 @@ Rigidbody2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 553931597}
   - {fileID: 370133518}
+  - {fileID: 619394802}
   - {fileID: 519420032}
   - {fileID: 369931384}
   - {fileID: 2038833244}

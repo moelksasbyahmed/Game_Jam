@@ -41,22 +41,22 @@ public class split : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && numberOfSplitestsLeft > 0 && activePlayer == gameObject)
         {
             numberOfSplitestsLeft--;
-            Debug.Log(transform.position);
-
-            transform.GetChild(transform.childCount - 1).GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            Debug.Log(transform.GetChild(transform.childCount - 1).position);
+            
+           // transform.GetChild(transform.childCount - 1).GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             
             GameObject newSplitted = Instantiate(slime, playersParent);
             GameObject newSplitted2 = Instantiate(slime, playersParent);
 
-            newSplitted.transform.localPosition = Vector3.zero;
-            newSplitted2.transform.localPosition = Vector3.zero;
+           // newSplitted.transform.localPosition = Vector3.zero;
+            //newSplitted2.transform.localPosition = Vector3.zero;
 
 
-            newSplitted.transform.position = transform.GetChild(transform.childCount - 1).position;
-            newSplitted2.transform.position = transform.GetChild(transform.childCount - 1).position + Vector3.right * 1;
+            //newSplitted.transform.position = transform.GetChild(transform.childCount - 1).localPosition;
+           // newSplitted2.transform.position = transform.GetChild(transform.childCount - 1).localPosition + Vector3.right * 1;
 
-            Debug.Log(newSplitted.transform.position);
-
+            Debug.Log(newSplitted.transform.GetChild(transform.childCount - 1).position);
+            
 
             newSplitted.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
             newSplitted2.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
