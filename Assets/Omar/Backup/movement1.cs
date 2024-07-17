@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements.Experimental;
 using UnityEngine.XR;
 
-public class movement : MonoBehaviour
+public class movement1 : MonoBehaviour
 {
     private Rigidbody2D rb;
     private collision coll;
@@ -22,7 +22,6 @@ public class movement : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     public float risiingMultiplier = 2f;
 
-    bool dashOut = false;
     bool canDash = true;
     bool canMove = true;
     float x, y;
@@ -34,22 +33,17 @@ public class movement : MonoBehaviour
     }
     IEnumerator DashWait(bool stopDash)
     {
-        if (stopDash)
-        {
-            canDash = false;
-            dashOut = false;
-        }
+        if(stopDash)
+        canDash = false;
         canMove = false;
         rb.drag = dashDrag;
         yield return new WaitForSeconds(dashTime);
         wallJumping = false;
-        dashOut = true;
         canMove = true;
         rb.drag = 0;
 
     }
-    IEnumerator wallJumpMovementDisable()
-    {
+    IEnumerator wallJumpMovementDisable() {
         canMove = false;
         yield return new WaitForSeconds(wallJumpTime);
         canMove = true;
@@ -76,7 +70,7 @@ public class movement : MonoBehaviour
     }
     void WallSlide()
     {
-
+       
         if (coll.onWall)
         {
             bool pushingWall = false;
@@ -134,8 +128,7 @@ public class movement : MonoBehaviour
         if (coll.onGround)
         {
             wallJumping = false;
-            if (dashOut)
-                canDash = true;
+            canDash = true;
         }
         if (coll.onGround && Input.GetButtonDown("Jump"))
         {
@@ -143,17 +136,17 @@ public class movement : MonoBehaviour
         }
         if (rb.velocity.y < 0)
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMuliplier - 1) * Time.deltaTime;
+            rb.velocity += Vector2.up * Physics2D.gravity.y *(fallMuliplier-1) * Time.deltaTime;
         }
-        /* else if (rb.velocity.y > 0 && Input.GetButton("Jump"))
-         {
-             // jumpSpeed * risingMultiplier = lowJumMultiplier-1
-             rb.velocity += Vector2.up * Physics2D.gravity.y * ((lowJumpMultiplier/(rb.velocity.y))) * Time.deltaTime;
-             // 9  8  7  6 5 4 3 2 1 0
-             // 19 18 17 6 5 4 3 2 1 0
-         }*/
+       /* else if (rb.velocity.y > 0 && Input.GetButton("Jump"))
+        {
+            // jumpSpeed * risingMultiplier = lowJumMultiplier-1
+            rb.velocity += Vector2.up * Physics2D.gravity.y * ((lowJumpMultiplier/(rb.velocity.y))) * Time.deltaTime;
+            // 9  8  7  6 5 4 3 2 1 0
+            // 19 18 17 6 5 4 3 2 1 0
+        }*/
 
-        else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+        else if(rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
 
@@ -167,10 +160,10 @@ public class movement : MonoBehaviour
         Vector2 dir = new Vector2(x, y);
         if (wallJumping)
         {
-            rb.velocity = Vector2.Lerp(rb.velocity, new Vector2(dir.x * speed, rb.velocity.y), jumpLerp * Time.deltaTime);
+            rb.velocity = Vector2.Lerp(rb.velocity,new Vector2(dir.x * speed , rb.velocity.y), jumpLerp * Time.deltaTime);
 
         }
-        else if (canMove && !wallJumping)
+        else if(canMove && !wallJumping)
         {
             rb.velocity = new Vector2(dir.x * speed, rb.velocity.y);
             //rb.velocity = Vector2.right * dir.x * speed;
