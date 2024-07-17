@@ -31,8 +31,9 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<collision>();
     }
-    IEnumerator DashWait()
+    IEnumerator DashWait(bool stopDash)
     {
+        if(stopDash)
         canDash = false;
         canMove = false;
         rb.drag = dashDrag;
@@ -86,14 +87,14 @@ public class movement : MonoBehaviour
 
         }
     }
-    private void Dash()
+    public void Dash(bool stopDash)
     {
         if (!canDash) { return; }
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             rb.velocity = Vector2.zero;
             rb.velocity += new Vector2(x, y).normalized * dashSpeed;
-            StartCoroutine(DashWait());
+            StartCoroutine(DashWait(stopDash));
 
 
         }
@@ -103,7 +104,7 @@ public class movement : MonoBehaviour
 
         WallSlide();
         Jump();
-        Dash();
+        Dash(true);
         WallJump();
         Walk();
 
