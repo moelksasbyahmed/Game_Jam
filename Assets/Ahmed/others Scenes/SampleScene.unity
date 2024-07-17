@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 394544960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0360e047736f1cc4d990337c763eb448, type: 3}
+  m_Script: {fileID: 11500000, guid: 392dbf57563bbc74ba56c729ec18358b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wallJumping: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 394544960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76b0da27c0504aa4bbc077ecdf4e7406, type: 3}
+  m_Script: {fileID: 11500000, guid: cffc6909e05c7d34db919aa6a30f2d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   groundLayer:
@@ -232,7 +232,7 @@ MonoBehaviour:
   rightOffset: {x: 0.33, y: 0}
   leftOffset: {x: -0.33, y: 0}
   upOffset: {x: 0, y: 0.33}
-  onGround: 0
+  onGround: 1
   onWall: 0
   onRightWall: 0
   onLeftWall: 0
@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 438761369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 10.6, y: -3.52, z: 0}
+  m_LocalPosition: {x: 1, y: -3.5, z: 0}
   m_LocalScale: {x: 23.486748, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -490,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 494364894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -10.69, y: -2.61, z: 0}
+  m_LocalPosition: {x: -2.6, y: -2.6, z: 0}
   m_LocalScale: {x: 23.486748, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
