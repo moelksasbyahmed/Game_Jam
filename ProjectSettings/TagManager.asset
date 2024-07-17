@@ -7,11 +7,12 @@ TagManager:
   - slot
   - ok
   - panel
+  - Groundd
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - backGround Objects
   - Water
   - UI
   - ground
