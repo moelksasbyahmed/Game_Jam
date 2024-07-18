@@ -7,6 +7,7 @@ public class playerFollower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -17,7 +18,8 @@ public class playerFollower : MonoBehaviour
 
             player = split.activePlayer.transform;
 
-            transform.position = player.transform.GetChild(player.transform.childCount - 1).position +offset;
+            transform.Translate(player.transform.GetChild(player.transform.childCount - 1).position + offset - transform.position);
+                //= player.transform.GetChild(player.transform.childCount - 1).localPosition +offset;
 
         }
 

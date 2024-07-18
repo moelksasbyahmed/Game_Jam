@@ -1,5 +1,21 @@
 {
   "dependencies": {
+    "com.aarthificial.pixelgraphics": {
+      "version": "https://github.com/Nitohen/pixelgraphics.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "10.4.0"
+      },
+      "hash": "647d3a2b1972f01145ccaf6c9648db8ba32d8377"
+    },
+    "com.aarthificial.reanimation": {
+      "version": "https://github.com/aarthificial/reanimation.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "228b69e45103b168bf198fbd9bd0c9669774406f"
+    },
     "com.unity.2d.animation": {
       "version": "9.0.4",
       "depth": 1,
@@ -157,6 +173,15 @@
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.9"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.7.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
