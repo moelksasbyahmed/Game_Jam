@@ -28,7 +28,7 @@ public class Grapple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(2) && transform.parent.GetComponent<split>().numberOfSplitestsLeft >0)
+        if (Input.GetMouseButtonDown(2) && transform.parent.GetComponent<split>().numberOfSplitestsLeft >0 && split.activePlayer.activePlayerObject == transform.parent.gameObject)
         {
             Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = (mousePos - (Vector2)transform.position).normalized;

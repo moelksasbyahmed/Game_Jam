@@ -1,10 +1,59 @@
 using System.Collections;
 using UnityEngine;
 
+
+public class ActivePlayer
+{
+    public enum colors { red, blue, green, yellow, purble, cyan };
+    public GameObject activePlayerObject;
+    public colors activePlayerColor = colors.green;
+    public Color red = new Color32(163, 17, 19, 191);
+    public Color blue = new Color32(17, 32, 163, 191);
+    public Color green = new Color32(22, 163, 17, 191);
+    public Color yellow = new Color32(160, 163, 17, 191); // red + green
+    public Color purble = new Color32(163, 17, 146, 191); // red + blue
+    public Color cyan = new Color32(17, 163, 154, 191); // green + blue
+
+    public static colors operator +(ActivePlayer a, colors b)
+    {
+        colors ac = a.activePlayerColor;
+        colors bc = b;
+
+        if (ac != bc)
+        {
+            if ((ac == colors.red || ac == colors.green) && (bc == colors.red || bc == colors.green))
+            {
+                return  colors.yellow ;
+
+            }
+            if ((ac == colors.red || ac == colors.blue) && (bc == colors.red || bc == colors.blue))
+            {
+                return colors.purble ;
+
+            }
+            if ((ac == colors.green || ac == colors.blue) && (bc == colors.green || bc == colors.blue))
+            {
+                return  colors.cyan ;
+
+            }
+            else
+            {
+                return colors.green; //if secondary with primary
+            }
+        }
+        else
+        {
+            return  ac ;
+        }
+
+    }
+}
 public class split : MonoBehaviour
 {
+    public ActivePlayer.colors thisPlayerColor = ActivePlayer.colors.green;
+
     public int numberOfSplitestsLeft = 3;
-    public static GameObject activePlayer;
+    public static ActivePlayer activePlayer = new ActivePlayer();
     public GameObject slime;
 
     static Transform playersParent;
@@ -12,10 +61,11 @@ public class split : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (activePlayer == null)
+
+        if (activePlayer.activePlayerObject == null)
         {
 
-            activePlayer = gameObject;
+            activePlayer.activePlayerObject = gameObject;
         }
         if (playersParent == null)
         {
@@ -27,47 +77,71 @@ public class split : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activePlayer != gameObject)
+        if (activePlayer.activePlayerObject != gameObject)
         {
             try
             {
 
                 transform.GetChild(transform.childCount - 1).GetComponent<movement>().enabled = false;
                 transform.GetChild(transform.childCount - 1).GetComponent<collision>().enabled = false;
+                transform.GetChild(transform.childCount - 1).GetComponent<Grapple>().enabled = false;
             }
             catch { }
 
             this.enabled = false;
             return;
         }
+        else
+        {
+            activePlayer.activePlayerColor = thisPlayerColor;
+        }
+        if(activePlayer.activePlayerObject == gameObject)
+        {
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                thisPlayerColor = ActivePlayer.colors.red;
+            }
+            if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                thisPlayerColor = ActivePlayer.colors.blue;
+            }
+            if(Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                thisPlayerColor = ActivePlayer.colors.green;
+            }
+
+        }
         c2D.offset = transform.GetChild(transform.childCount - 1).localPosition;
-        if (Input.GetMouseButtonDown(0) && numberOfSplitestsLeft > 0 && activePlayer == gameObject)
+        if (Input.GetMouseButtonDown(0) && numberOfSplitestsLeft > 0 && activePlayer.activePlayerObject == gameObject)
         {
             StopAllCoroutines();
             StartCoroutine(splitt());
         }//for splitting
-        if (Input.GetKeyDown(KeyCode.Tab) && activePlayer == gameObject)
+        if (Input.GetKeyDown(KeyCode.Tab) && activePlayer.activePlayerObject == gameObject)
         {
-            int newIndex = activePlayer.transform.GetSiblingIndex() + 1;
+            int newIndex = activePlayer.activePlayerObject.transform.GetSiblingIndex() + 1;
             if (newIndex >= playersParent.childCount)
             {
                 newIndex = 0;
             }
-            activePlayer = playersParent.GetChild(newIndex).gameObject;
-            Debug.Log(activePlayer.name);
+            activePlayer.activePlayerObject = playersParent.GetChild(newIndex).gameObject;
+            Debug.Log(activePlayer.activePlayerObject.name);
             try
             {
 
-                activePlayer.transform.GetChild(transform.childCount - 1).GetComponent<movement>().enabled = true;
-                activePlayer.transform.GetChild(transform.childCount - 1).GetComponent<collision>().enabled = true;
+                activePlayer.activePlayerObject.transform.GetChild(transform.childCount - 1).GetComponent<movement>().enabled = true;
+                activePlayer.activePlayerObject.transform.GetChild(transform.childCount - 1).GetComponent<collision>().enabled = true;
+                activePlayer.activePlayerObject.transform.GetChild(transform.childCount - 1).GetComponent<Grapple>().enabled = true;
+                
+
             }
             catch { }
-            activePlayer.GetComponent<split>().enabled = true;
+            activePlayer.activePlayerObject.GetComponent<split>().enabled = true;
 
         } //for switching between players
 
 
-        if (Input.GetMouseButtonDown(1) && activePlayer == gameObject && possibleToJoin != null)
+        if (Input.GetMouseButtonDown(1) && activePlayer.activePlayerObject == gameObject && possibleToJoin != null)
         {
             StopAllCoroutines();
 
@@ -138,12 +212,16 @@ public class split : MonoBehaviour
 
         newSplitted.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
         newSplitted2.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
+        newSplitted.GetComponent<split>().thisPlayerColor = thisPlayerColor;
+        newSplitted2.GetComponent<split>().thisPlayerColor = thisPlayerColor;
 
 
-        newSplitted.transform.localScale = activePlayer.transform.localScale / 2;
-        newSplitted2.transform.localScale = activePlayer.transform.localScale / 2;
+        newSplitted.transform.localScale = activePlayer.activePlayerObject.transform.localScale / 2;
+        newSplitted2.transform.localScale = activePlayer.activePlayerObject.transform.localScale / 2;
 
-        activePlayer = newSplitted2;
+        activePlayer.activePlayerObject = newSplitted2;
+        activePlayer.activePlayerColor = newSplitted2.GetComponent<split>().thisPlayerColor;
+
 
         Destroy(gameObject);
 
@@ -181,13 +259,16 @@ public class split : MonoBehaviour
 
 
         newSplitted.GetComponent<split>().numberOfSplitestsLeft = numberOfSplitestsLeft;
+        newSplitted.GetComponent<split>().thisPlayerColor = activePlayer + toJoinWith.parent.GetComponent<split>().thisPlayerColor;
+        //                                                       ^ the current  active player                             ^  the color of the slim that the player wants to join with
+
+        newSplitted.transform.localScale = activePlayer.activePlayerObject.transform.localScale + toJoinWith.parent.localScale;
+
+        activePlayer.activePlayerObject = newSplitted;
+        activePlayer.activePlayerColor = newSplitted.GetComponent<split>().thisPlayerColor;
 
 
-        newSplitted.transform.localScale = activePlayer.transform.localScale * 2;
-
-        activePlayer = newSplitted;
-
-         Destroy(toJoinWith.parent.gameObject);
+        Destroy(toJoinWith.parent.gameObject);
         Destroy(gameObject);
         yield break;
     }
