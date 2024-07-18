@@ -13,7 +13,6 @@ public class makeItSlimy : MonoBehaviour
     void Start()
     {
         springs = GetComponentsInChildren<SpringJoint2D>();
-        Debug.Log(springs[1].connectedBody.gameObject.name);
     }
 
     // Update is called once per frame

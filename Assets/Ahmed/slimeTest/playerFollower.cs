@@ -17,7 +17,7 @@ public class playerFollower : MonoBehaviour
 
             player = split.activePlayer.transform;
 
-            transform.position = player.transform.GetChild(transform.childCount - 1).position +offset;
+            transform.position = player.transform.GetChild(player.transform.childCount - 1).position +offset;
 
         }
 
