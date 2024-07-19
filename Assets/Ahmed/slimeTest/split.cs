@@ -38,7 +38,7 @@ public class ActivePlayer
             }
             else
             {
-                return colors.green; //if secondary with primary
+                return ac; //if secondary with primary
             }
         }
         else

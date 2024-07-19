@@ -8,6 +8,7 @@ TagManager:
   - ok
   - panel
   - Groundd
+  - core
   layers:
   - Default
   - TransparentFX
